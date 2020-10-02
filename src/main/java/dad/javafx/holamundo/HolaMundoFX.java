@@ -18,20 +18,20 @@ public class HolaMundoFX extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
+		//Creamos el cuadro de texto
 		nombreText = new TextField();
 		nombreText.setPrefColumnCount(5);
 		nombreText.setPromptText("Introduce un nombre");
 		nombreText.setMaxWidth(150);
-		
+		//Creamos una etiqueta
 		saludoLabel = new Label();
 		saludoLabel.setText("Aquí saldrá el saludo");
-		
+		//Creamos un botón
 		saludarButton = new Button();
 		saludarButton.setText("Saludar");
 		saludarButton.setOnAction(e -> onSaludarButtonAction(e));
 		saludarButton.setDefaultButton(true);
-	
+	    //Panel con disposición vertical
 		VBox root = new VBox();
 		root.setSpacing(5);
 		root.setAlignment(Pos.CENTER);
